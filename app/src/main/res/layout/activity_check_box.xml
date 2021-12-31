@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lailah.com.addition.CheckBoxActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox Example"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/textView13" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:id="@+id/checkBox"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:layout_gravity="center_vertical" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPhone"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/checkBox3"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Windows Mobile"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/checkBox2"
+        android:layout_gravity="center_vertical"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

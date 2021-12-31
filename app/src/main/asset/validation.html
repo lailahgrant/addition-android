@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lailah Form validation</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	
+</head>
+<body>
+
+<script type="text/javascript">
+	function validateform() {
+		var name=document.myform.name.value;
+		var password=document.myform.password.value;
+
+		if(name==null || name==""){
+			alert("Name cant be blank");
+			return false;
+		}else if(password.length<6){
+			alert("password must be @least 6 characters long");
+			return false;
+		}
+	}
+</script>
+
+
+<h1>Form validation</h1>
+<form name="myform" action="validation.php" method="post" class=" col-md-3 col-md-offset-5" onsubmit="return validateform()">
+	<div class="form-group">
+		Name <input type="text" name="name" class="form-control">
+	</div>
+	<div class="form-group">
+		Password <input type="password" name="password" class="form-control">
+	</div>
+	<div class="form-group">
+		<input  type="submit" class="btn btn-outline-dark" name="submit" value="send"></input>
+	</div>
+</form>
+
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
